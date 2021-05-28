@@ -1,0 +1,37 @@
+// ---------------------------PORTFOLIO---------------------
+.portfolio{
+    width: 60%;
+    margin-bottom: 50px;
+    h2{
+        text-align: center;
+        padding: 20px 0;
+        color: black;
+    }
+    .lineStar{
+        @include linestar;
+    }
+    .line {
+        display: inline-block;
+        height: 30px;
+        width: 40px;
+        border-top: 3px solid black;
+      }
+    .star{
+        @include star;
+    }  
+    .img6{
+        display: flex;
+        flex-direction: row;  
+        
+        align-items: stretch;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: space-evenly;     
+        
+    }
+    img{
+        
+        height: 140px;
+        margin: 5px;
+    }
+}

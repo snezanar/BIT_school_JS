@@ -1,0 +1,220 @@
+
+@import './contact';
+@import './mixins';
+@import './navbar';
+@import './portfolio';
+@import './variables';
+
+@mixin linestar{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+@mixin star {
+    display: inline-block;
+    margin: 0px 5px;
+    position: relative;
+    top:-20px;
+    
+}
+$colorHeader:rgb(27, 148, 112); 
+$textrHeader:white;
+@font-face {
+    font-family: Lato;
+    src: url(./fonts/Lato-Regular.ttf);
+ 
+  }
+  
+  @font-face {
+    font-family: Lato;
+    src: url(./fonts/Lato-Bold.ttf);
+    font-weight: bold;
+  }
+ 
+ 
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1,h2,h3,h6,h4 {
+  font-family: Lato;
+
+}
+
+p {
+    font-family: Lato;
+}
+
+
+.imgAbout{
+    background-color: $colorHeader;
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        width: 15%;
+    }
+    h1{        
+        padding: 10px 0;
+        color:$textrHeader;
+    }
+    h6{
+        color:$textrHeader;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+
+.lineStar{
+@include linestar;
+}
+.line {
+    display: inline-block;
+    height: 30px;
+    width: 40px;
+    border-top: 3px solid white;
+  }
+.star{
+@include star;
+}  
+
+// ------------ABOUT----------------------
+.about{
+      
+    background-color: $colorHeader;
+    color: $textrHeader;
+    h2{
+        text-align: center;
+        padding: 20px 0;
+        
+    }
+    .paragraf{
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        
+        margin-bottom: 30px;
+    }
+    input{
+        border:1px solid white;
+        text-align: center;
+        padding: 5px 10px;
+        background-color: $colorHeader;
+        color: $textrHeader;   
+        position: relative; 
+        right: -400px;
+        // top:-10px;
+        margin-bottom:50px; 
+        // display: flex;
+        // align-items: center;        
+        // justify-content: center;
+    }
+    input:hover {
+        font-weight: bolder;    
+        color: black ;
+        border:1px solid black;
+    }
+
+}
+
+
+// --------------FOOTER-------------
+footer{
+    background-color: $colorHeader;
+    color: $textrHeader;
+    text-align: center;
+    height: 260px;
+    
+    p{
+        font-size: 11px;
+        margin: 2px;
+    }
+    .footerflex{
+        display: flex;    
+        justify-content: space-between;
+        padding:20px;
+        width: 70%;
+    }
+    section{
+        flex: 1;
+   
+    }
+    h4{
+        padding:20px;
+    }
+    .web{
+        text-align: center;
+        padding:10px;         
+        
+    }
+    img{
+        width: 40px;
+
+    }
+    .grey{
+        color: grey;
+        font-size: 8px;
+    }
+
+
+
+}
+@media  screen and (max-width: 990px){
+    .paragraf{
+        display: flex;
+      
+        flex-direction: column;
+      
+    }
+    .about input{
+        position: relative; 
+        right: -250px;        
+    }
+    .footerflex{
+        height: 500px;
+    }
+}
+
+@media  screen and (max-width: 768px){
+    
+    .about input{        
+        position: relative; 
+        right: -150px; 
+    }
+    .contact{
+        width: 60%;
+    textarea{
+        max-width: 300px;
+    }
+    }   
+    footer{
+        height: 500px;
+    }
+    .footerflex{
+        display: flex;
+        flex-direction: column;
+        margin: 1px;
+    }
+    .grey{
+        padding-bottom: 1px;
+    }
+
+  
+
+}
+
+
+
+
+
+  
+
+  
+
+ 
+ 
