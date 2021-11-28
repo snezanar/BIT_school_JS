@@ -88,7 +88,7 @@ for(var i =0; i<niz.length; i++){
 
         }
     }
-}
+}console.log('sort: '+smaller);
 
 //4b) SORT + print second smallest
 var niz=[4, 2, 2, -1, 6];
@@ -195,14 +195,6 @@ for(var i=0;i < niz1.length;i++)
 }
 console.log(niz3);
 
-// drugo resenje
-var niz1=[4, 5, 6, 2];
-var niz2=[3, 8, 11, 9];
-var niz3=niz1;
-for(var i=0;i < niz1.length;i++){
-    niz3[niz3.length]=niz2[i];
-}
-console.log(niz3, niz1);
 
 // 8.	Write a program that concatenates two arrays. 
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
