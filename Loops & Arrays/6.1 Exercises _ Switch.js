@@ -1,6 +1,9 @@
-// 1.	Write a program that shows text representation of a day in a week
-// for a number input from 1 to 7. Print output in console. 
+// 2.	Write a program that shows text representation of a day in a week for 
+// a number input from 1 to 7. All other cases output a message explaining that input 
+// must be a number between 1 and 7.
 // For input 1, output should be “Monday”.
+// For input 10, output should be “Input must be a number between 1 and 7”.
+
 var day=8;
 switch (day){
     case 1: 
@@ -28,11 +31,6 @@ switch (day){
         console.log('enter number between 1-7');
         break;
 }
-// 2.	Write a program that shows text representation of a day in a week for 
-// a number input from 1 to 7. All other cases output a message explaining that input 
-// must be a number between 1 and 7.
-// For input 1, output should be “Monday”.
-// For input 10, output should be “Input must be a number between 1 and 7”.
 
 // 3.	Write a program that for a 1-7 number input (representing a day in a week) shows if that day 
 // is a weekday or weekend. All other cases output a message explaining that input must be a number 
@@ -65,7 +63,7 @@ default:
 
 // 4.	Write a program that for a 1-12 number input (representing a month in a year) shows that 
 // month’s name. All other cases output a message explaining that input must be a number between 1 and 12. 
-// 		For input 2, output should be “February”.
+// For input 2, output should be “February”.
 // For input 6, output should be “June”.
 // For input 13, output should be “Input must be a number between 1 and 12”.
 
@@ -175,26 +173,26 @@ switch (letter){
 var city='Split';
 switch(city){
 case 'Bor':
-    case 'Paracin':
-    case 'Krusevac':
-        case 'Beograd':
-            console.log('Serbia')
-            break;
-            case 'Zagreb':
-                case 'Split':
-                    case 'Osijek':
-                        console.log('Croatia');
-                        break;
-                        case ('Podgorica'):
-                            case('Tivar'):
-                            console.log('Montenegro');
-                            break;
-                            case 'Maribor':
-                                console.log('Slovenia');
-                                break;
-    default:
-        console.log("Please choose a different city")
-        break;
+case 'Paracin':
+case 'Krusevac':
+case 'Beograd':
+      console.log('Serbia')
+      break;
+case 'Zagreb':
+case 'Split':
+case 'Osijek':
+      console.log('Croatia');
+      break;
+case ('Podgorica'):
+case ('Tivar'):
+     console.log('Montenegro');
+     break;                            
+case 'Maribor':
+     console.log('Slovenia');
+     break;
+default:
+     console.log("Please choose a different city")
+     break;
 }
 
 // 8.	Write a program that takes as input two numbers and a string denoting the operation (“+”, “-”, “*”, “/”)
@@ -207,17 +205,17 @@ case '+':
     console.log(a+b)
     break;
 
-    case '-':
+case '-':
     console.log(a-b)
     break;
-    case '*':
+case '*':
     console.log(a*b)
     break;
-    case '/':
+case '/':
         if(b!==0){
             console.log(a/b)
         }else console.log('can not devide by 0')
-    
+   
     break;
 default :
     console.log('no');
