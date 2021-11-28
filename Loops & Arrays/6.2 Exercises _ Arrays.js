@@ -30,9 +30,3 @@ console.log(x[0][3]);
 console.log(x[2]);
 console.log(x[2][1]);
 
-var i=9;
-do{
-    i++;
-}
-while(i<10)
-console.log(i);
