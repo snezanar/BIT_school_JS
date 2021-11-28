@@ -1,15 +1,6 @@
 //1.	Write a for loop that will iterate from 0 to 15. For each iteration, it will check if the current 
 //number is odd or even, and display a message to the screen.
 
-
-
-var a=[2,3,'abc',11,-7];
-a.length=0;
-console.log(a);
-
-console.log(2<3+5);
-
-
 for(var i=0; i<=15; i++){
     if (i%2==0){
         console.log('number '+i+ ' is even')
@@ -40,9 +31,9 @@ console.log('product: '+prod);
 
 //4.	Write a program which prints the elements of the following array as a single string.
 
-var x = ['1', 'A', 'B', "c", "r", true, NaN, undefined];
-for (var i=0; i<niz.length; i++){
-    console.log(x[i]);
+var arr = ['1', 'A', 'B', "c", "r", true, NaN, undefined];
+for (var i=0; i<arr.length; i++){
+    console.log(arr[i]);
 }
 
 //5.	Write a program that prints the elements of the following array.
@@ -52,8 +43,7 @@ var a = [
 [8, 11, 9, 4], 
 [7, 0, 7, 27]
 ];
-for(var i=0; i<a.length; i++){
-    var currentElement=a[i];
+for(var i=0; i<a.length; i++){    
     console.log(a[i]);
 }
 // -------------------
